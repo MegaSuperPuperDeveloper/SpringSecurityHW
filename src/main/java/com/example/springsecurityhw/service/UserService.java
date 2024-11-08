@@ -23,8 +23,8 @@ public class UserService {
         return userRepository.findById(id);
     }
 
-    public User save(String username, String password) {
-        return userRepository.save(new User(username, password));
+    public User save(String username, String password, Role role) {
+        return userRepository.save(new User(username, password, role));
     }
 
     public void deleteById(Long id) {

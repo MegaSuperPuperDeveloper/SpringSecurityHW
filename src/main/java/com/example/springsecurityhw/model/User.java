@@ -31,10 +31,10 @@ public class User implements UserDetails {
     @Column(nullable = false)
     private Role role;
 
-    public User(String username, String password) {
+    public User(String username, String password, Role role) {
         this.username = username;
         this.password = password;
-        this.role = Role.ROLE_USER;
+        this.role = role;
     }
 
     @Override
