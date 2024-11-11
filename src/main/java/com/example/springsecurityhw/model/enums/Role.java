@@ -1,7 +1,11 @@
 package com.example.springsecurityhw.model.enums;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.Getter;
 
+//@Entity
+//@Table(name = "roles")
 @Getter
 public enum Role {
 
