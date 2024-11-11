@@ -33,7 +33,7 @@ public class User implements UserDetails {
 
     public User(String username, String password, Role role) {
         this.username = username;
-        this.password = password;
+        this.password = new BCryptPasswordEncoder().encode(password);
         this.role = role;
     }
 
